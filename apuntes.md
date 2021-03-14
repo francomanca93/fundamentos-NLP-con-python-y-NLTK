@@ -10,6 +10,10 @@
     - [NLP y NLU](#nlp-y-nlu)
     - [Usos de NLP](#usos-de-nlp)
     - [Dificultad y Test de Turing](#dificultad-y-test-de-turing)
+  - [Evolución del NLP](#evolución-del-nlp)
+    - [Linea del tiempo del NPL](#linea-del-tiempo-del-npl)
+    - [Avances del NLP](#avances-del-nlp)
+    - [Lo que estudiaremos y Roadmap](#lo-que-estudiaremos-y-roadmap)
 - [Fundamentos con NLTK](#fundamentos-con-nltk)
 
 # Introducción al Procesamiento de Lenguaje Natural
@@ -50,4 +54,36 @@
   - Alan Turing propuso que un humano evaluara conversaciones en lenguaje natural entre un humano y una máquina diseñada para generar respuestas similares a las de un humano. El evaluador sabría que uno de los participantes de la conversación es una máquina y los intervinientes serían separados unos de otros. La conversación estaría limitada a un medio únicamente textual como un teclado de computadora y un monitor por lo que sería irrelevante la capacidad de la máquina de transformar texto en habla. En el caso de que el evaluador no pueda distinguir entre el humano y la máquina acertadamente (Turing originalmente sugirió que la máquina debía convencer a un evaluador, después de 5 minutos de conversación, el 70 % del tiempo), la máquina habría pasado la prueba. Esta prueba no evalúa el conocimiento de la máquina en cuanto a su capacidad de responder preguntas correctamente, solo se toma en cuenta la capacidad de esta de generar respuestas similares a las que daría un humano.
   - [Prueba de Turing](https://es.wikipedia.org/wiki/Prueba_de_Turing)
 
+## Evolución del NLP
+
+### Linea del tiempo del NPL
+
+![nlp-evolucion-temporal](https://imgur.com/FqvjOpL.png)
+
+- Entre 1950 y 1990: Sistemas basados en reglas. A las máquinas se las preprogramaba con todas las reglas de la linguistica para poder comunicarse. Esto basado en todo nuestro conocimiento linguistico del lenguaje, reglas, para saber cuando algo esta bien dicho o escrito.
+- Entre 1990 y 2000: Estadística de corpus. Algoritmos basados en estadisticas de corpus. Un corpus es una coleccion de diferentes textos.
+- Entre 2000 y 2014: Machine Learning.
+- Entre 2014 y 2020: Deep Learning.
+
+### Avances del NLP
+
+El NLP ha tenido 2 vertientes muy grandes diferenciadas en el siguiente esquema:
+
+- Entendimiento de texto (bajo nivel): Algoritmos especificos para una tarea concreta.
+- Aprendizaje de representaciones: Algoritmos basados en redes neuronales, donde se pueden crear arquitectura para realizar multitareas.
+
+![avances-nlp](https://imgur.com/AdQ8kWa.png)
+
+![avanzes-2](https://imgur.com/DTwfNRv.png)
+
+- LSTM: Redes secuenciales que procesan las oraciones teniendo en cuenta las palabras anterior a la que se esta analizando.
+- BiLSTM: Para mejorar el contexto de las oraciones hay que ver las palabras anteriores y posteriores. Estas son una evolución de las redes anteriores.
+- Transformer: Las palabras estan dadas por su contexto en la oración, pero podemos simplificar el analisis unicamente analizando ciertas palabras. Analizando palabras especificas en puntos especificos de una oración o un texto, todo esto sin tener que ver toda la oración, esto es llamado **mecanismo de atención**. Los transformer utilizan este concepto.
+- Reformer. Evolución de los transformers.
+
+### Lo que estudiaremos y Roadmap
+
+![librerias](https://imgur.com/bfaadDp.png)
+
+![roadmap](https://imgur.com/7QNH1Fi.png)
 # Fundamentos con NLTK
