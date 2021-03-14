@@ -14,6 +14,7 @@
     - [Linea del tiempo del NPL](#linea-del-tiempo-del-npl)
     - [Avances del NLP](#avances-del-nlp)
     - [Lo que estudiaremos y Roadmap](#lo-que-estudiaremos-y-roadmap)
+  - [Conceptos básicos de NLP](#conceptos-básicos-de-nlp)
 - [Fundamentos con NLTK](#fundamentos-con-nltk)
 
 # Introducción al Procesamiento de Lenguaje Natural
@@ -86,4 +87,31 @@ El NLP ha tenido 2 vertientes muy grandes diferenciadas en el siguiente esquema:
 ![librerias](https://imgur.com/bfaadDp.png)
 
 ![roadmap](https://imgur.com/7QNH1Fi.png)
+
+## Conceptos básicos de NLP
+
+![](https://imgur.com/fRc1TLu.png)
+
+- **NLP**: El procesamiento de lenguaje natural esta más enfocado hacia aplicaciones practicas en la ingeniería
+- **LC**: La lingüística computacional estudia el lenguaje desde una perspectiva más científica.
+  - Basada en crear modelos que pueden tener dos enfoques de conocimiento o datos.
+
+  ![LP](https://imgur.com/pdFgtKL.png)
+
+- **TEXTO**: El procesamiento de una cadena de texto necesita una Normalización que incluye los siguientes procesos:
+![](https://imgur.com/oToe8kw.png)
+
+  - **Tokenización**: Separar en palabras toda la cadena de texto
+  ![tokenizacion](https://imgur.com/2Z7dGWb.png)
+  - **Lematización**: Convertir cada una de las palabras a su raiz fundamental
+  ![lematizacino](https://imgur.com/URrYjzV.png)
+  - **Segmentación**: Separación en frases (puede ser con las comas)
+  ![segmentacion](https://imgur.com/92EDLYt.png)
+
+- **CORPUS**: Colección de muchos textos
+![corpus](https://imgur.com/gn00ue1.png)
+
+- **CORPORA**: Colección de colecciones de texto
+![corpora](https://imgur.com/7RCaaXO.png)
+
 # Fundamentos con NLTK
