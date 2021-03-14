@@ -102,16 +102,23 @@ El NLP ha tenido 2 vertientes muy grandes diferenciadas en el siguiente esquema:
 ![](https://imgur.com/oToe8kw.png)
 
   - **Tokenización**: Separar en palabras toda la cadena de texto
+  
   ![tokenizacion](https://imgur.com/2Z7dGWb.png)
+  
   - **Lematización**: Convertir cada una de las palabras a su raiz fundamental
+  
   ![lematizacino](https://imgur.com/URrYjzV.png)
+  
   - **Segmentación**: Separación en frases (puede ser con las comas)
+  
   ![segmentacion](https://imgur.com/92EDLYt.png)
 
 - **CORPUS**: Colección de muchos textos
+
 ![corpus](https://imgur.com/gn00ue1.png)
 
 - **CORPORA**: Colección de colecciones de texto
+
 ![corpora](https://imgur.com/7RCaaXO.png)
 
 # Fundamentos con NLTK
