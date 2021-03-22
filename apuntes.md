@@ -16,6 +16,8 @@
     - [Lo que estudiaremos y Roadmap](#lo-que-estudiaremos-y-roadmap)
   - [Conceptos básicos de NLP](#conceptos-básicos-de-nlp)
 - [Fundamentos con NLTK](#fundamentos-con-nltk)
+  - [Inicio a los fundamentos | Configurar ambiente de trabajo](#inicio-a-los-fundamentos--configurar-ambiente-de-trabajo)
+  - [Palabras, textos y vocabularios | Expresiones Regulares](#palabras-textos-y-vocabularios--expresiones-regulares)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -122,3 +124,51 @@ El NLP ha tenido 2 vertientes muy grandes diferenciadas en el siguiente esquema:
 ![corpora](https://imgur.com/7RCaaXO.png)
 
 # Fundamentos con NLTK
+
+## Inicio a los fundamentos | Configurar ambiente de trabajo
+
+**Corpus lingüístico**
+
+Un corpus lingüístico es un conjunto amplio y estructurado de ejemplos reales de uso de la lengua. Estos ejemplos pueden ser textos, o muestras orales.​ Un corpus lingüístico es un conjunto de textos relativamente grande, creado independientemente de sus posibles formas o usos.
+
+**Token**
+
+Un token es un conjunto de caracteres que representan texto. También podemos decir que el token es la unidad análisis de texto, así como un número es la unidad del análisis matemático. Es fácil para nosotros pensar que un token es igual a una palabra, sin embargo esto no es correcto, puesto que la “palabra” es un elemento del lenguaje que posee significado por sí misma, mientras que el token se supone es un elemento abstracto. Dependiendo de la tarea que estemos afrontando, el token puede ser alguna de las siguientes:
+
+    Una sola palabra, como: “jóvenes”, “nivel” o “superior”,
+    Un número, como: “1”, “0”, o “10”,
+    Un solo caracter, como: “j”, “ó” o “v”,
+    Un símbolo, como “¿”, “?” o “#”,
+    Un conjunto de caracteres, como “nivel superior” o “escuela técnica”
+
+**Tokenización**
+
+La tokenización es un paso que divide cadenas de texto más largas en piezas más pequeñas o tokens. Los trozos de texto más grandes pueden ser convertidos en oraciones, las oraciones pueden ser tokenizadas en palabras, etc. El procesamiento adicional generalmente se realiza después de que una pieza de texto ha sido apropiadamente concatenada. La tokenización también se conoce como segmentación de texto o análisis léxico. A veces la segmentación se usa para referirse al desglose de un gran trozo de texto en partes más grandes que las palabras (por ejemplo, párrafos u oraciones), mientras que la tokenización se reserva para el proceso de desglose que se produce exclusivamente en palabras.
+
+Algunos enlaces:
+
+- [Corpus lingüístico. Wikipedia](https://es.wikipedia.org/wiki/Corpus_lingüístico)
+- [Introducción al análisis de texto. 🌮 tacos de datos](https://tacosdedatos.com/analisis-texto#:%7E:text=Un%20token%20es%20un%20conjunto,la%20unidad%20del%20an%C3%A1lisis%20matem%C3%A1tico.&text=Un%20conjunto%20de%20caracteres%2C%20como,superior%E2%80%9D%20o%20%E2%80%9Cescuela%20t%C3%A9cnica%E2%80%9D)
+- [Preprocesamiento de datos de texto: un tutorial en Python. Medium](https://medium.com/datos-y-ciencia/preprocesamiento-de-datos-de-texto-un-tutorial-en-python-5db5620f1767#:%7E:text=single%20curly%20braces.%7D-,Tokenizaci%C3%B3n,ser%20tokenizadas%20en%20palabras%2C%20etc)
+
+## Palabras, textos y vocabularios | Expresiones Regulares
+
+- Las Expresiones Regulares o **regex** constituyen un lenguaje estandarizado para definir cadenas de búsqueda de texto.
+- Libreria de operaciones con  expresiones regulares de Python [re](https://docs.python.org/3/library/re.html)
+- Reglas para escribir expresiones regulares [Wiki](https://es.wikipedia.org/wiki/Expresión_regular)
+- [Expresiones Regulares Cheat Sheet from dataquest.io](https://www.dataquest.io/wp-content/uploads/2019/03/python-regular-expressions-cheat-sheet.pdf)
+
+Básicos de REGEX
+
+- Estructura de la funcion `re.search()`: Esta funcion determina si el patron de búsqueda p está contenido en la cadena s `re.search(p, s)`.
+- Búsquedas en cadenas de texto con **meta caracteres** básicos:
+  - `es`: Buscamos el 'es' en la cadena w **en donde este**.
+  - `es$`: Buscamos el 'es' en la cadena w al **final**.
+  - `^es`: Buscamos el 'es' en la cadena w al **principio**.
+
+- Patrones de búsqueda usando el concepto de rango:
+  - **Rango `[a-z]`**: Determina que el carácter debe estar ubicado entra la a y la z
+  - **Rango `[ghi]`**: Determina que el carácter que este en esta posición puede ser cualquier letra entre la g, h e i.
+- Clausuras
+  - El `*` Esta clausura representa que se puede repetir 0 o más veces.
+  - El `+`: Esta clausura representa que s puede repetir 1 o más veces.
