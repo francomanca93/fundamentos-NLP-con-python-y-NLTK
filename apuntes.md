@@ -128,6 +128,8 @@ El NLP ha tenido 2 vertientes muy grandes diferenciadas en el siguiente esquema:
 
 ## Inicio a los fundamentos | Configurar ambiente de trabajo
 
+> [Notebook configurando ambiente de trabajo](1_fundamentos_nlp.ipynb)
+
 **Corpus lingüístico**
 
 Un corpus lingüístico es un conjunto amplio y estructurado de ejemplos reales de uso de la lengua. Estos ejemplos pueden ser textos, o muestras orales.​ Un corpus lingüístico es un conjunto de textos relativamente grande, creado independientemente de sus posibles formas o usos.
@@ -154,6 +156,8 @@ Algunos enlaces:
 
 ## Palabras, textos y vocabularios | Expresiones Regulares
 
+> [Notebook aprendiendo REGEX](1_fundamentos_nlp.ipynb)
+
 - Las Expresiones Regulares o **regex** constituyen un lenguaje estandarizado para definir cadenas de búsqueda de texto.
 - Libreria de operaciones con  expresiones regulares de Python [re](https://docs.python.org/3/library/re.html)
 - Reglas para escribir expresiones regulares [Wiki](https://es.wikipedia.org/wiki/Expresión_regular)
@@ -175,6 +179,8 @@ Básicos de REGEX
   - El `+`: Esta clausura representa que s puede repetir 1 o más veces.
 
 ## Tokenizacion con Expresiones Regulares
+
+> [Notebook aplicando Tokenizacion con expresiones regulares](1_fundamentos_nlp.ipynb)
 
 Aplicaremos las expresiones regulares para formar algoritmos de tokenización.
 
