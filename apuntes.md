@@ -18,6 +18,7 @@
 - [Fundamentos con NLTK](#fundamentos-con-nltk)
   - [Inicio a los fundamentos | Configurar ambiente de trabajo](#inicio-a-los-fundamentos--configurar-ambiente-de-trabajo)
   - [Palabras, textos y vocabularios | Expresiones Regulares](#palabras-textos-y-vocabularios--expresiones-regulares)
+  - [Tokenizacion con Expresiones Regulares](#tokenizacion-con-expresiones-regulares)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -172,3 +173,17 @@ Básicos de REGEX
 - Clausuras
   - El `*` Esta clausura representa que se puede repetir 0 o más veces.
   - El `+`: Esta clausura representa que s puede repetir 1 o más veces.
+
+## Tokenizacion con Expresiones Regulares
+
+Aplicaremos las expresiones regulares para formar algoritmos de tokenización.
+
+**Tokenización** es el proceso mediante el cual se sub-divide un cadena de texto en unidades linguisticas minimas
+
+Aplicamos en nuestro notebook los siguientes casos:
+
+- **Caso 1**: _tokenizar por espacios vacios_
+- **Caso 2**: _tokenizacion usando regex_. Por diferentes tipos de espacios como tab, salto, espacio.
+- **Caso 3**: _tokenizacion usando regex 2_. Para diferentes tipos de espacios y caracteres no alfanumericos. El metacaracter `\W` lo que hace es hacer match con todo lo que no sea un caracter alfanumérico (como paréntesis, símbolos raros, etc.)
+- **Caso 4**: _tokenizacion usando regex mas fofisticada_. En lugar de usar `[\t\n]+` para definir un rango de espacios, tabs, etc. Se puede usar el metacaracter `\s`, específicamente diseñado para reconocer diferentes clases de espacios.
+- **Caso 5**: Tokenizar usando la libreria NLTK para casos especiales.
