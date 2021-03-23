@@ -19,6 +19,8 @@
   - [Inicio a los fundamentos | Configurar ambiente de trabajo](#inicio-a-los-fundamentos--configurar-ambiente-de-trabajo)
   - [Palabras, textos y vocabularios | Expresiones Regulares](#palabras-textos-y-vocabularios--expresiones-regulares)
   - [Tokenizacion con Expresiones Regulares](#tokenizacion-con-expresiones-regulares)
+- [Aplicaciones | Estadísticas del lenguaje](#aplicaciones--estadísticas-del-lenguaje)
+  - [Estadísticas básicas del lenguaje](#estadísticas-básicas-del-lenguaje)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -193,3 +195,30 @@ Aplicamos en nuestro notebook los siguientes casos:
 - **Caso 3**: _tokenizacion usando regex 2_. Para diferentes tipos de espacios y caracteres no alfanumericos. El metacaracter `\W` lo que hace es hacer match con todo lo que no sea un caracter alfanumérico (como paréntesis, símbolos raros, etc.)
 - **Caso 4**: _tokenizacion usando regex mas fofisticada_. En lugar de usar `[\t\n]+` para definir un rango de espacios, tabs, etc. Se puede usar el metacaracter `\s`, específicamente diseñado para reconocer diferentes clases de espacios.
 - **Caso 5**: Tokenizar usando la libreria NLTK para casos especiales.
+
+# Aplicaciones | Estadísticas del lenguaje
+
+## Estadísticas básicas del lenguaje
+
+Descargamos una serie de libros que ya se encuentran tokenizados con `nltk.download('book')`. Con estos podemos empezar a aplicar estadistica basicas del lenguaje.
+
+Aplicamos una métrica llamada **riqueza lexica en un texto**. Cuando tenemos un texto, es normal que algunas palabras se repitan. Queremos definir cuantas palabras unicas se utilizaron respecto al total de palabras del texto. Cuanto mas grande sea nuestra riqueza lexica, mas palabras diferentes utilizo nuestro autor. Sabiendo lo anterior creamos funciones para medir la requiza lexica:
+
+```py
+def riqueza_lexica(texto):
+  vocabulario = sorted(set(texto))
+  return len(vocabulario)/len(texto)
+
+```
+
+Tambien podemos saber el **porcentaje de aparicion de una palabra** en nuestro texto:
+
+```py
+
+def porcentaje_palabra(palabra, texto):
+  porcentaje_palabra = 100 * texto.count(palabra)/len(texto)
+  return porcentaje_palabra
+
+```
+
+Entre otras funciones **aplicando estadísticas al lenguaje** que podemos ver en el [Notebook](2.aplicaciones-estadísticas-del-lenguaje.ipynb)
