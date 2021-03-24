@@ -21,6 +21,7 @@
   - [Tokenizacion con Expresiones Regulares](#tokenizacion-con-expresiones-regulares)
 - [Aplicaciones | Estadísticas del lenguaje](#aplicaciones--estadísticas-del-lenguaje)
   - [Estadísticas básicas del lenguaje](#estadísticas-básicas-del-lenguaje)
+  - [Distribuciónes de frecuencia de palabras](#distribuciónes-de-frecuencia-de-palabras)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -222,3 +223,18 @@ def porcentaje_palabra(palabra, texto):
 ```
 
 Entre otras funciones **aplicando estadísticas al lenguaje** que podemos ver en el [Notebook](2.aplicaciones-estadísticas-del-lenguaje.ipynb)
+
+## Distribuciónes de frecuencia de palabras
+
+Los cálculos estadísticos más simples que se pueden efectuar sobre un texto o un corpus son los relacionados con frecuencia de aparición de palabras.
+
+Cuando hacemos esta operacion sobre todas las palabras que componen el vocabulario de un texto construimos una distribucion de probabilidad de esas palabras dentro del texto.
+
+Podemos hacer esto de 2 formas diferentes:
+
+- **Realizar un for básico**, computacionalmete es muy pesado si tenemos muchos tokens.
+  - Estaríamos hablando de un Big **On ** 2**, osea tiene **crecimiento polinominial**, estos son algoritmos que deben usarse cuando el input o la entrada de datos es pequeña.
+- Utilizamos el **método FreqDist de NLTK**.
+  - Este procesa un objeto de texto de una forma diferente a la que lo haría un for.
+
+Podemos ver estas 2 aplicaciones [Notebook](2.aplicaciones-estadísticas-del-lenguaje.ipynb)
