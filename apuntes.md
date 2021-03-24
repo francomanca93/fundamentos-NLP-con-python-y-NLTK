@@ -22,6 +22,7 @@
 - [Aplicaciones | Estadísticas del lenguaje](#aplicaciones--estadísticas-del-lenguaje)
   - [Estadísticas básicas del lenguaje](#estadísticas-básicas-del-lenguaje)
   - [Distribuciónes de frecuencia de palabras](#distribuciónes-de-frecuencia-de-palabras)
+  - [Refinamiento y visualización de cuerpos de texto](#refinamiento-y-visualización-de-cuerpos-de-texto)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -238,3 +239,12 @@ Podemos hacer esto de 2 formas diferentes:
   - Este procesa un objeto de texto de una forma diferente a la que lo haría un for.
 
 Podemos ver estas 2 aplicaciones [Notebook](2.aplicaciones-estadísticas-del-lenguaje.ipynb)
+
+## Refinamiento y visualización de cuerpos de texto
+
+Distribuciones sobre contenido con filtro-fino
+
+- En la sección anterior vimos que los tokens más frecuentes en un texto no son necesariamente las palabras que mas informacion nos arrojan sobre el contenido del mismo.
+- Por ello, es mejor filtrar y construir distribuciones de frecuencia que no consideren signos de puntuación o caracteres especiales.
+
+Podemos ver estas aplicaciones y los gráficos en el [Notebook](2.aplicaciones-estadísticas-del-lenguaje.ipynb)
