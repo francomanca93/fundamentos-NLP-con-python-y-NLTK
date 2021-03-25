@@ -23,6 +23,7 @@
   - [Estadísticas básicas del lenguaje](#estadísticas-básicas-del-lenguaje)
   - [Distribuciónes de frecuencia de palabras](#distribuciónes-de-frecuencia-de-palabras)
   - [Refinamiento y visualización de cuerpos de texto](#refinamiento-y-visualización-de-cuerpos-de-texto)
+  - [N-gramas y Colocaciones del lenguaje](#n-gramas-y-colocaciones-del-lenguaje)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -248,3 +249,24 @@ Distribuciones sobre contenido con filtro-fino
 - Por ello, es mejor filtrar y construir distribuciones de frecuencia que no consideren signos de puntuación o caracteres especiales.
 
 Podemos ver estas aplicaciones y los gráficos en el [Notebook](2_aplicaciones_estadísticas_del_lenguaje.ipynb)
+
+## N-gramas y Colocaciones del lenguaje
+
+Frecuencia de ocurrencias para palabras, n-gramas y colocaciones.
+
+En esta sección vamos a trabajar sobre estructuras más complejas que nos permiten hacer procesamiento mucho mas preciso del lenguaje y de los textos que hacemos uso.
+
+> [N-granas](https://es.wikipedia.org/wiki/N-grama) son secuencias de N palabras consecutivas, donde n puede ser 2 o mas.
+
+![bigramas](https://imgur.com/YOxlaSS.png)
+![trigramas](https://imgur.com/AaQ4Wcm.png)
+
+> "Las colocaciones de una palabra son sentencias que indican los lugares que esa palabra acostumbra a tomar en el lenguaje (sin seguir las reglas del lenguaje)”
+
+![colocaciones](https://imgur.com/arLqT5a.png)
+
+Ambas frases recuadradas significas lo mismo, pero por alguna razón la segunda en color rojo, suena menos natural. La primer versión en español suena mas natural. **Todo esto sin que haya alguna regla especifica del lenguaje natural respecto a esto.**
+
+La segunda frase significa que estamos contando secretos, que es un chisme, por razones culturaes se puede utilizar esa palabra en ese contexto. **Todo esto sin que haya alguna regla especifica del lenguaje natural respecto a esto.**
+
+Muchas frases basadas en tendencias culturales hace dificil definir reglas estrictas para definir las colocaciones, aunque existen algunas estadisticas que nos permiten identificar de forma numerica, matematica, usando programacion algunas colocaciones del lenguaje.
