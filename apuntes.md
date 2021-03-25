@@ -24,6 +24,7 @@
   - [Distribuciónes de frecuencia de palabras](#distribuciónes-de-frecuencia-de-palabras)
   - [Refinamiento y visualización de cuerpos de texto](#refinamiento-y-visualización-de-cuerpos-de-texto)
   - [N-gramas y Colocaciones del lenguaje](#n-gramas-y-colocaciones-del-lenguaje)
+  - [Extrayendo n-gramas de un texto en Python](#extrayendo-n-gramas-de-un-texto-en-python)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -270,3 +271,24 @@ Ambas frases recuadradas significas lo mismo, pero por alguna razón la segunda 
 La segunda frase significa que estamos contando secretos, que es un chisme, por razones culturaes se puede utilizar esa palabra en ese contexto. **Todo esto sin que haya alguna regla especifica del lenguaje natural respecto a esto.**
 
 Muchas frases basadas en tendencias culturales hace dificil definir reglas estrictas para definir las colocaciones, aunque existen algunas estadisticas que nos permiten identificar de forma numerica, matematica, usando programacion algunas colocaciones del lenguaje.
+
+## Extrayendo n-gramas de un texto en Python
+
+Podemos ver como extraer ngramas con python en el [Notebook](3_aplicaciones_estadisticas_del_lenguaje_nGramas_colocaciones.ipynb).
+
+En esta sección luego de haber introducido el concepto de n-gramas trabajamos con ellos en un texto con Python.
+
+Trabajamos con bigramas, Parejas de palabras que ocurren consecutivamente con el módulo `from nltk.util import bigrams` y trigramas con el módulo `from nltk.util import ngrams`, este último nos permite trabajar con ngramas del tamaño que nosotros deseemos.
+
+Los ngramas pueden aparecer mas de una vez, sabiendo esto podemos hacer estudio de esto usando frecuencias de aparición de este tipo de estructura en un determinado texto.
+
+Cuando las estructuras mas comunes son stopwords y caracteres que no son de nuestro interes debemos filtrar esto, los cuales lo hicimos en el notebook.
+
+Los N-gramas en general son la base de de muchos algoritmos de NLP que tienen aplicaciones diversas en la industria:
+
+- Clasificacion de texto
+- Identificacion del habla
+- Traducción
+- Algoritmos de aprendizaje de enbebimiento para los vectores de palabras o vectores de frases.
+
+Si queremos hacer nubes de palabras, los N-gramas son las implementaciones mas simples para hacer esto.
