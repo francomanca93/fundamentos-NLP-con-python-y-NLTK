@@ -19,13 +19,14 @@
   - [Inicio a los fundamentos | Configurar ambiente de trabajo](#inicio-a-los-fundamentos--configurar-ambiente-de-trabajo)
   - [Palabras, textos y vocabularios | Expresiones Regulares](#palabras-textos-y-vocabularios--expresiones-regulares)
   - [Tokenizacion con Expresiones Regulares](#tokenizacion-con-expresiones-regulares)
-- [Aplicaciones | Estadísticas del lenguaje](#aplicaciones--estadísticas-del-lenguaje)
-  - [Estadísticas básicas del lenguaje](#estadísticas-básicas-del-lenguaje)
-  - [Distribuciónes de frecuencia de palabras](#distribuciónes-de-frecuencia-de-palabras)
-  - [Refinamiento y visualización de cuerpos de texto](#refinamiento-y-visualización-de-cuerpos-de-texto)
+- [Aplicaciones](#aplicaciones)
+  - [Estadísticas del lenguaje](#estadísticas-del-lenguaje)
+    - [Estadísticas básicas del lenguaje](#estadísticas-básicas-del-lenguaje)
+    - [Distribuciónes de frecuencia de palabras](#distribuciónes-de-frecuencia-de-palabras)
+    - [Refinamiento y visualización de cuerpos de texto](#refinamiento-y-visualización-de-cuerpos-de-texto)
   - [N-gramas y Colocaciones del lenguaje](#n-gramas-y-colocaciones-del-lenguaje)
-  - [Extrayendo n-gramas de un texto en Python](#extrayendo-n-gramas-de-un-texto-en-python)
-  - [Colocaciones en Python](#colocaciones-en-python)
+    - [Extrayendo n-gramas de un texto en Python](#extrayendo-n-gramas-de-un-texto-en-python)
+    - [Colocaciones en Python](#colocaciones-en-python)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -201,9 +202,11 @@ Aplicamos en nuestro notebook los siguientes casos:
 - **Caso 4**: _tokenizacion usando regex mas fofisticada_. En lugar de usar `[\t\n]+` para definir un rango de espacios, tabs, etc. Se puede usar el metacaracter `\s`, específicamente diseñado para reconocer diferentes clases de espacios.
 - **Caso 5**: Tokenizar usando la libreria NLTK para casos especiales.
 
-# Aplicaciones | Estadísticas del lenguaje
+# Aplicaciones
 
-## Estadísticas básicas del lenguaje
+## Estadísticas del lenguaje
+
+### Estadísticas básicas del lenguaje
 
 Descargamos una serie de libros que ya se encuentran tokenizados con `nltk.download('book')`. Con estos podemos empezar a aplicar estadistica basicas del lenguaje.
 
@@ -228,7 +231,7 @@ def porcentaje_palabra(palabra, texto):
 
 Entre otras funciones **aplicando estadísticas al lenguaje** que podemos ver en el [Notebook](2_aplicaciones_estadísticas_del_lenguaje.ipynb)
 
-## Distribuciónes de frecuencia de palabras
+### Distribuciónes de frecuencia de palabras
 
 Los cálculos estadísticos más simples que se pueden efectuar sobre un texto o un corpus son los relacionados con frecuencia de aparición de palabras.
 
@@ -243,7 +246,7 @@ Podemos hacer esto de 2 formas diferentes:
 
 Podemos ver estas 2 aplicaciones [Notebook](2_aplicaciones_estadísticas_del_lenguaje.ipynb)
 
-## Refinamiento y visualización de cuerpos de texto
+### Refinamiento y visualización de cuerpos de texto
 
 Distribuciones sobre contenido con filtro-fino
 
@@ -273,7 +276,7 @@ La segunda frase significa que estamos contando secretos, que es un chisme, por 
 
 Muchas frases basadas en tendencias culturales hace dificil definir reglas estrictas para definir las colocaciones, aunque existen algunas estadisticas que nos permiten identificar de forma numerica, matematica, usando programacion algunas colocaciones del lenguaje.
 
-## Extrayendo n-gramas de un texto en Python
+### Extrayendo n-gramas de un texto en Python
 
 Podemos ver como extraer ngramas con python en el [Notebook](3_aplicaciones_estadisticas_del_lenguaje_nGramas_colocaciones.ipynb).
 
@@ -294,7 +297,7 @@ Los N-gramas en general son la base de de muchos algoritmos de NLP que tienen ap
 
 Si queremos hacer nubes de palabras, los N-gramas son las implementaciones mas simples para hacer esto.
 
-## Colocaciones en Python
+### Colocaciones en Python
 
 [Notebook](3_aplicaciones_estadisticas_del_lenguaje_nGramas_colocaciones.ipynb) aplicando colocaciones en Python.
 
