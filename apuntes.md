@@ -25,6 +25,7 @@
   - [Refinamiento y visualización de cuerpos de texto](#refinamiento-y-visualización-de-cuerpos-de-texto)
   - [N-gramas y Colocaciones del lenguaje](#n-gramas-y-colocaciones-del-lenguaje)
   - [Extrayendo n-gramas de un texto en Python](#extrayendo-n-gramas-de-un-texto-en-python)
+  - [Colocaciones en Python](#colocaciones-en-python)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -292,3 +293,11 @@ Los N-gramas en general son la base de de muchos algoritmos de NLP que tienen ap
 - Algoritmos de aprendizaje de enbebimiento para los vectores de palabras o vectores de frases.
 
 Si queremos hacer nubes de palabras, los N-gramas son las implementaciones mas simples para hacer esto.
+
+## Colocaciones en Python
+
+[Notebook](3_aplicaciones_estadisticas_del_lenguaje_nGramas_colocaciones.ipynb) aplicando colocaciones en Python.
+
+Con los ngramas desarrollados en la sección ["extrayendo n-gramas de un texto en Python"](#extrayendo-n-gramas-de-un-texto-en-python), gracias a los métodos de NLTK, en esta sección introducimos estadisticas y metricas especiales, es particular una que nos permite identificar colocaciones llamada **Pointwise Mutual Information (PMI)**.
+
+> Colocaciones: Son secuencias de palabras que ocurren en textos y conversaciones con una frecuencia inusualmente alta. Existe evidencia estadística de que estas palabras ocurren con esa frecuencia inusualmente alta, y esto nos da la idea de que podemos construir algunos números, algunas métricas que nos permiten identificar de manera sistemática estas colocaciones.
