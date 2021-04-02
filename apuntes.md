@@ -303,4 +303,8 @@ Si queremos hacer nubes de palabras, los N-gramas son las implementaciones mas s
 
 Con los ngramas desarrollados en la sección ["extrayendo n-gramas de un texto en Python"](#extrayendo-n-gramas-de-un-texto-en-python), gracias a los métodos de NLTK, en esta sección introducimos estadisticas y metricas especiales, es particular una que nos permite identificar colocaciones llamada **Pointwise Mutual Information (PMI)**.
 
+Para considerar las Colocaciones debemos tener en cuenta la frecuencia de aparicion de los bigramas y sus respectivas palabras que lo componen, asi como tambien la metrica PMI. Sabiendo esto haremos un gráfico que represente esto.
+
+Luego graficaremos los datos en lo que seria un gráfico de dispersión donde veremos en el eje x al PMI y en el eje y al Logaritmo de la frecuencia de los Bigramas. Todo explicado en el Notebook
+
 > Colocaciones: Son secuencias de palabras que ocurren en textos y conversaciones con una frecuencia inusualmente alta. Existe evidencia estadística de que estas palabras ocurren con esa frecuencia inusualmente alta, y esto nos da la idea de que podemos construir algunos números, algunas métricas que nos permiten identificar de manera sistemática estas colocaciones.
