@@ -27,6 +27,7 @@
   - [N-gramas y Colocaciones del lenguaje](#n-gramas-y-colocaciones-del-lenguaje)
     - [Extrayendo n-gramas de un texto en Python](#extrayendo-n-gramas-de-un-texto-en-python)
     - [Colocaciones en Python](#colocaciones-en-python)
+    - [Filtros y colocaciones en NLTK](#filtros-y-colocaciones-en-nltk)
 
 # Introducción al Procesamiento de Lenguaje Natural
 
@@ -308,3 +309,11 @@ Para considerar las Colocaciones debemos tener en cuenta la frecuencia de aparic
 Luego graficaremos los datos en lo que seria un gráfico de dispersión donde veremos en el eje x al PMI y en el eje y al Logaritmo de la frecuencia de los Bigramas. Todo explicado en el Notebook
 
 > Colocaciones: Son secuencias de palabras que ocurren en textos y conversaciones con una frecuencia inusualmente alta. Existe evidencia estadística de que estas palabras ocurren con esa frecuencia inusualmente alta, y esto nos da la idea de que podemos construir algunos números, algunas métricas que nos permiten identificar de manera sistemática estas colocaciones.
+
+### Filtros y colocaciones en NLTK
+
+[Notebook](3_aplicaciones_estadisticas_del_lenguaje_nGramas_colocaciones.ipynb) calculando colocaciones con NLTK.
+
+En el caso anterior trabajamos en una visualizacion interactiva para identificar bigramas que tenian probabilidad altas de ser colocaciones.
+
+Luego realizamos lo mismo que antes con la libreria de NLTK sin el uso de visualizaciones y de una forma mas rápida. Finalizamos haciendo lo mismo que antes pero con un texto en Español, un texto que incluye titulares de noticias.
